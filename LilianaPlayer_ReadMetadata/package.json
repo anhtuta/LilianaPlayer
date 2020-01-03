@@ -1,0 +1,15 @@
+{
+  "name": "lilianaplayer_readmetadata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anhtu",
+  "license": "ISC",
+  "dependencies": {
+    "music-metadata": "^4.8.2",
+    "musicmetadata": "^2.0.5"
+  }
+}
