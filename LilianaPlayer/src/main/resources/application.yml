@@ -1,0 +1,36 @@
+server:
+  port: 9005
+  servlet:
+    context-path: /liliana-player
+
+  # Enable HTTPS
+  ssl:
+    key-store: classpath:keystore.p12
+    key-store-password: tzk@20200923
+    key-store-type: pkcs12
+    key-alias: tuzaku
+    key-password: tzk@20200923
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 5555
+    url: jdbc:mysql://localhost:3306/liliana_player?characterEncoding=utf8&verifyServerCertificate=false&useSSL=true
+    username: root
+
+  # format JSON returned from API
+  jackson:
+    serialization:
+      indent-output: true
+  jpa:
+    properties:
+      hibernate:
+        format_sql: false
+        show_sql: true
+        type: trace
+        use_sql_comments: false
+
+# global variables
+album_folder: D:/xampp/htdocs/Albums
+lyric_folder: D:/xampp/htdocs/LilianaPlayer/Lyrics
+mp3_folder: D:/xampp/htdocs/MyMusic
