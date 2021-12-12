@@ -247,8 +247,10 @@ public class SongService {
                 imageName = null;
             }
         }
-        if (imageName != null)
+        if (imageName != null) {
+            songInDb.setImageName(imageName);
             songInDb.setImageUrl("/api/song/album?file=" + imageName);
+        }
 
         songRepository.save(songInDb);
     }

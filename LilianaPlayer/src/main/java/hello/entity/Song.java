@@ -46,6 +46,9 @@ public class Song {
     @Column(name = "file_name")
     private String fileName;
 
+    @Column(name = "image_name")
+    private String imageName;
+
     @Column(name = "image_url")
     private String imageUrl;
 

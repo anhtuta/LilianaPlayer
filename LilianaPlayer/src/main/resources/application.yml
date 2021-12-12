@@ -4,12 +4,12 @@ server:
     context-path: /liliana-player
 
   # Enable HTTPS
-  ssl:
-    key-store: classpath:keystore.p12
-    key-store-password: tzk@20200923
-    key-store-type: pkcs12
-    key-alias: tuzaku
-    key-password: tzk@20200923
+#  ssl:
+#    key-store: classpath:keystore.p12
+#    key-store-password: tzk@20200923
+#    key-store-type: pkcs12
+#    key-alias: tuzaku
+#    key-password: tzk@20200923
 
 spring:
   datasource:
@@ -31,6 +31,6 @@ spring:
         use_sql_comments: false
 
 # global variables
-album_folder: D:/xampp/htdocs/Albums
+album_folder: D:/xampp/htdocs/LilianaPlayer/Albums
 lyric_folder: D:/xampp/htdocs/LilianaPlayer/Lyrics
 mp3_folder: D:/xampp/htdocs/MyMusic

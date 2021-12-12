@@ -49,7 +49,7 @@ public class SongController {
      * API này return về audio, thỉnh thoảng chạy nó có dấu hiệu bị xước! Hiện tại
      * chưa khắc phục được
      */
-    @RequestMapping(value = "", method = RequestMethod.GET, produces = { "audio/mpeg" })
+    @RequestMapping(value = "/file", method = RequestMethod.GET, produces = { "audio/mpeg" })
     public FileSystemResource getSong(@RequestParam("file") String file) throws IOException {
         return songService.getSong(file);
     }
